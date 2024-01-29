@@ -204,7 +204,7 @@ body {
 
 h1 {
     font-size: 1.25em;
-    margin: 15px 0 5px 15px;
+    margin: 15px 0 5px 33px;
     font-weight: bold;
     text-transform: uppercase;
 }
@@ -221,11 +221,18 @@ ul li:nth-child(1) a:visited,
 ul li:nth-child(1) a:hover,
 ul li:nth-child(1) a:active {
     position: absolute;
-    left: 140px;
+    left: 105px;
     top: 20px;
     font-variant: small-caps;
     font-size: 1.5em;
     font-weight: bold;
+}
+
+ul li:nth-of-type(n + 2) a,
+ul li:nth-of-type(n + 2) a:visited,
+ul li:nth-of-type(n + 2) a:hover,
+ul li:nth-of-type(n + 2) a:active {
+    text-transform: uppercase;
 }
 
 a,
@@ -242,7 +249,7 @@ li:hover {
 }
 
 header p {
-    margin: 10px 0 5px 15px;
+    margin: 10px 27px 5px 33px;
 }
 
 h2,
@@ -343,7 +350,7 @@ h2 {
 }
 .scroll h3 {
     color: #590242;
-    /* text-transform: uppercase; */
+    text-transform: uppercase;
     font-weight: bold;
     margin: 3px 0 10px 5px;
 }
@@ -422,6 +429,7 @@ header {
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
         width: 100%;
         align-items: center;
+        margin-top: 5px;
     }
 
     label span,
@@ -433,21 +441,16 @@ header {
         width: 834px;
     }
 
-    ul li:nth-child(1) {
-        position: static;
-    }
-
-    a,
-    a:visited,
-    a:hover,
-    a:active {
-        color: white;
-        text-decoration: none;
-        /* text-transform: uppercase; */
-    }
-
     li {
         align-items: center;
+    }
+
+    ul li:nth-child(1) a,
+    ul li:nth-child(1) a:visited,
+    ul li:nth-child(1) a:hover,
+    ul li:nth-child(1) a:active {
+        position: static;
+        margin-left: 10px;
     }
 
     #container {
@@ -472,7 +475,7 @@ header {
     #curated .scroll img {
         float: left;
     }
-
+    /* replace with anchor */
     footer h3 {
         float: right;
         margin-right: 10px;

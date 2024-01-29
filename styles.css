@@ -361,7 +361,10 @@ h2 {
     margin: 6px 0 0 0;
 }
 
-footer h3 {
+#trending a,
+#curated a,
+#playlists a {
+    display: block;
     color: white;
     background-color: #590242;
     border-radius: 5px;
@@ -371,7 +374,9 @@ footer h3 {
     text-align: center;
 }
 
-footer h3:hover {
+#trending a:hover,
+#curated a:hover,
+#playlists a:hover {
     background-color: #020659;
 }
 
@@ -476,7 +481,10 @@ header {
         float: left;
     }
     /* replace with anchor */
-    footer h3 {
+    #trending a,
+    #curated a,
+    #playlists a {
+        display: block;
         float: right;
         margin-right: 10px;
     }
